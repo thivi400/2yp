@@ -79,19 +79,19 @@ export default function Navbar() {
       {open && (
         <div className="border-t border-gray-200 bg-white md:hidden ">
           <div className="flex flex-col gap-4 px-4 py-6">
-            <NavLink to="/" className={navLinkClass}>
+            <NavLink to="/" onClick={() => setOpen(false)} className={navLinkClass}>
             <span className="flex items-center gap-2">
               <Home className="h-5 w-5" />
               Home
             </span>
           </NavLink>
-            <NavLink to="/" className={navLinkClass}>
+            <NavLink to="/about" onClick={() => setOpen(false)} className={navLinkClass}>
             <span className="flex items-center gap-2">
               <Info className="h-5 w-5" />
               ABOUT
             </span>
           </NavLink>
-            <NavLink to="/" className={navLinkClass}>
+            <NavLink to="/contact" onClick={() => setOpen(false)} className={navLinkClass}>
             <span className="flex items-center gap-2">
               <Phone className="h-5 w-5" />
               CONTACT US
